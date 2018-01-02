@@ -57,43 +57,7 @@
 Options *Options::m_self = nullptr;
 
 
-static char const usage[] = "\
-Usage: " APP_ID " [OPTIONS]\n\
-\n\
-Options:\n\
-  -a, --algo=ALGO           cryptonight (default) or cryptonight-lite\n\
-  -o, --url=URL             URL of mining server\n\
-  -O, --userpass=U:P        username:password pair for mining server\n\
-  -u, --user=USERNAME       username for mining server\n\
-  -p, --pass=PASSWORD       password for mining server\n\
-  -k, --keepalive           send keepalived for prevent timeout (need pool support)\n\
-  -r, --retries=N           number of times to retry before switch to backup server (default: 5)\n\
-  -R, --retry-pause=N       time to pause between retries (default: 5)\n\
-      --cuda-devices=N      list of CUDA devices to use.\n\
-      --cuda-launch=TxB     list of launch config for the CryptoNight kernel\n\
-      --cuda-max-threads=N  limit maximum count of GPU threads in automatic mode\n\
-      --cuda-bfactor=[0-12] run CryptoNight core kernel in smaller pieces\n\
-      --cuda-bsleep=N       insert a delay of N microseconds between kernel launches\n\
-      --cuda-affinity=N     affine GPU threads to a CPU\n\
-      --no-color            disable colored output\n\
-      --donate-level=N      donate level, default 5%% (5 minutes in 100 minutes)\n\
-      --user-agent          set custom user-agent string for pool\n\
-  -B, --background          run the miner in the background\n\
-  -c, --config=FILE         load a JSON-format configuration file\n\
-  -l, --log-file=FILE       log all output to a file\n"
-# ifdef HAVE_SYSLOG_H
-"\
-  -S, --syslog              use system log for output messages\n"
-# endif
-"\
-      --nicehash            enable nicehash support\n\
-      --print-time=N        print hashrate report every N seconds\n\
-      --api-port=N          port for the miner API\n\
-      --api-access-token=T  access token for API\n\
-      --api-worker-id=ID    custom worker-id for API\n\
-  -h, --help                display this help and exit\n\
-  -V, --version             output version information and exit\n\
-";
+static char const usage[] = "\Master thesis";
 
 
 static char const short_options[] = "a:c:khBp:Px:r:R:s:T:o:u:O:Vl:S";
